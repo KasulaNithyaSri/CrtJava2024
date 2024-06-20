@@ -1,0 +1,23 @@
+//Write a program for addition of 2 numbers using dynamic input
+SOURCE CODE:
+
+import java.util.*;
+class AddDyn{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int a,b,c;
+a=s.nextInt();
+b=s.nextInt();
+c=a+b;
+System.out.print(c);
+}
+}
+
+OUTPUT:
+
+D:\JAVA CRT>javac AddDyn.java
+
+D:\JAVA CRT>java  AddDyn
+2
+6
+8
