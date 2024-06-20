@@ -1,0 +1,16 @@
+SOURCE CODE:
+
+class Test{
+public static void main(String args[]){
+double a=45.7575;
+System.out.printf("%.2f",a);
+}
+}
+
+
+OUTPUT:
+
+D:\JAVA CRT>javac Test.java
+
+D:\JAVA CRT>java Test
+45.76
