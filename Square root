@@ -1,0 +1,21 @@
+// Write a program by reading a number and print the square root of the given number
+
+import java.util.*;
+class SqRoot{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int a;
+a=s.nextInt();
+float b=(float)Math.sqrt(a);
+System.out.print(b);
+}
+}
+
+OUTPUT:
+
+D:\JAVA CRT>javac SqRoot.java
+
+D:\JAVA CRT>java  SqRoot
+34
+5.8309517
