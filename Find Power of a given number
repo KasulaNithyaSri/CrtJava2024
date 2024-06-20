@@ -1,0 +1,22 @@
+SOURCE CODE:
+
+
+import java.util.*;
+class Pow{
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+int m,n;
+m=s.nextInt();
+n=s.nextInt();
+int b=(int)Math.pow(m,n);
+System.out.print(b);
+}
+}
+
+OUTPUT:
+D:\JAVA CRT>javac Pow.java
+D:\JAVA CRT>java  Pow
+34
+2
+1156
