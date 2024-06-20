@@ -1,4 +1,4 @@
-Source code:
+Source code 1:
 
 class Test{
 public static void main(String args[]){
@@ -7,10 +7,25 @@ System.out.println("Python");
 }
 }
 
-OUTPUT:
+OUTPUT 1:
 
 D:\JAVA CRT>javac Test.java
 
 D:\JAVA CRT>java Test
 Java
 Python
+
+
+Source code 2:
+
+class Test{
+public static void main(String args[]){
+System.out.print("Java");
+System.out.print("Python");
+}
+}
+
+OUTPUT 2:
+D:\JAVA CRT>javac Test.java
+D:\JAVA CRT>java Test
+JavaPython
