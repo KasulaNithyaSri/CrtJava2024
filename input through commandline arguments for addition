@@ -1,0 +1,19 @@
+SOURCE CODE:
+
+class AdditionCom{
+public static void main(String[] args){
+int a=Integer.parseInt(args[0]);
+int b=Integer.parseInt(args[1]);
+int c=a+b;
+System.out.println("Sum="+(a+b));
+System.out.println("Value of a ="+a+" Value of b=" +b+" Sum="+c);
+}
+}
+
+OUTPUT:
+
+D:\JAVA CRT>javac AdditionCom.java
+
+D:\JAVA CRT>java AdditionCom 15 9
+Sum=24
+Value of a =15 Value of b=9 Sum=24
