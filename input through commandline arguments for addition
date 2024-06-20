@@ -17,3 +17,24 @@ D:\JAVA CRT>javac AdditionCom.java
 D:\JAVA CRT>java AdditionCom 15 9
 Sum=24
 Value of a =15 Value of b=9 Sum=24
+
+SOURCE CODE:
+
+class AdditionCom{
+public static void main(String[] args){
+float a=Float.parseFloat(args[0]);
+float b=Float.parseFloat(args[1]);
+float c=a+b;
+System.out.println("Sum=",(a+b));
+System.out.println("Value of a ="+a+" Value of b=" +b+" Sum="+c);
+}
+}
+
+
+OUTPUT:
+
+D:\JAVA CRT>javac AdditionCom.java
+
+D:\JAVA CRT>java AdditionCom 12.9 67.3
+Sum=80.200005
+Value of a =12.9 Value of b=67.3 Sum=80.200005
