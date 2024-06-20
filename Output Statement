@@ -1,0 +1,16 @@
+Source code:
+
+class Test{
+public static void main(String args[]){
+System.out.println("Java");
+System.out.println("Python");
+}
+}
+
+OUTPUT:
+
+D:\JAVA CRT>javac Test.java
+
+D:\JAVA CRT>java Test
+Java
+Python
