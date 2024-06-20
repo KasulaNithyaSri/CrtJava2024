@@ -1,4 +1,4 @@
-SOURCE CODE:
+SOURCE CODE1:
 
 class Test{
 public static void main(String args[]){
@@ -14,3 +14,20 @@ D:\JAVA CRT>javac Test.java
 
 D:\JAVA CRT>java Test
 45.76
+
+
+
+SOURCE CODE2:
+class SetDigit{
+public static void main(String args[]){
+double a=45.7575;
+System.out.printf("%.1f",a);
+}
+}
+
+OUTPUT:
+
+D:\JAVA CRT>javac SetDigit.java
+
+D:\JAVA CRT>java SetDigit
+45.8
