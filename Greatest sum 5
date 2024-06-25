@@ -1,0 +1,84 @@
+Write a program to find the sum of elements in each row and column and also to find the greatest sum in rows and columns.
+
+Input Format
+
+Read size of rows and columns Read elements for matrix
+
+Constraints
+
+1<=n<10^7
+
+Output Format
+
+Print sum of rows in first line Print highest row no in next line Print sum of columns in next line Print highest column no in next line
+
+Sample Input 0
+
+3
+3
+1 6 8
+2 5 1
+3 8 2
+Sample Output 0
+
+15 8 13
+Row 1
+6 19 11
+Column 2
+
+
+SOURCE CODE:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int m=s.nextInt();
+        int[][] a=new int[n][m];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                a[i][j]=s.nextInt();
+            }
+        }
+        int max_row=0,row=-1;
+        int[] row_sum=new int[n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                row_sum[i]+=a[i][j];
+            }
+            if(max_row<row_sum[i]){
+                max_row=row_sum[i];
+                row=i;
+            }
+        }
+        int max_col=0,col=-1,k=0;
+        int col_sum[]=new int[m];
+        for(int j=0;j<m;j++){
+            for(int i=0;i<n;i++){
+                col_sum[j]+=a[i][j];
+                if(max_col<col_sum[j]){
+                max_col=col_sum[j];                
+                col=j;
+            }
+            }
+        }
+            for(int i=0;i<n;i++)
+                System.out.print(row_sum[i]+" ");
+            
+            System.out.println();
+            System.out.println("Row "+(row+1));
+        
+        for(int j=0;j<m;j++)
+            System.out.print(col_sum[j]+" ");
+        
+           System.out.println();
+            System.out.print("Column "+(col+1));
+           
+    
+    }
+}
