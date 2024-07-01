@@ -1,0 +1,74 @@
+SOURCE CODE1:
+
+import java.util.*;
+import java.lang.*;
+
+class String_Palindrome{
+public static void main(String[] args){
+
+Scanner s=new Scanner(System.in);
+String s1=s.next();
+int j=0;
+for(int i=s1.length()-1;i>=0;i--){
+	if(s1.charAt(i)==s1.charAt(j)){
+	j++;
+	}
+	else{
+	break;
+	}
+
+}
+if(j==s1.length()){
+System.out.print("Palindrome");
+}
+else{
+System.out.print("Not Palindrome");
+}
+}
+}
+
+
+SOURCE CODE2:
+
+
+
+import java.util.*;
+import java.lang.*;
+class String_Palindrome1{
+public static void main(String[] args){
+
+Scanner s=new Scanner(System.in);
+String s1=s.next();
+String s2="";
+
+for(int i=s1.length()-1;i>=0;i--){
+	s2=s2+s1.charAt(i);
+}
+
+if(s1.equals(s2)){
+System.out.print("Palindrome");
+}
+else{
+System.out.print("Not Palindrome");
+}
+}
+}
+
+
+OUTPUT1:
+
+D:\JAVA CRT>javac String_Palindrome.java
+
+D:\JAVA CRT>java String_Palindrome
+mam
+Palindrome
+
+
+
+OUTPUT2:
+
+D:\JAVA CRT>javac String_Palindrome.java
+
+D:\JAVA CRT>java String_Palindrome
+NITHYA
+Not Palindrome
