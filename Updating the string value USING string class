@@ -1,0 +1,25 @@
+SOURCE CODE1:
+
+import java.util.*;
+import java.lang.*;
+
+class String_sample{
+public static void main(String[] args){
+String s1=new String("Java");
+System.out.println(s1);
+s1=s1.concat(" Language");
+System.out.print(s1);
+
+
+}
+}
+
+
+
+OUTPUT:
+
+D:\JAVA CRT>javac String_sample.java
+
+D:\JAVA CRT>java String_sample
+Java
+Java Language
