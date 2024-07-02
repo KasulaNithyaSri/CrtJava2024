@@ -1,0 +1,64 @@
+//Read a string and print no of alpabets , no of upper case letters , no of digits and no of Special symbols
+
+
+SOURCE CODE:
+
+import java.util.*;
+class String_count{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String s1=s.nextLine();
+
+int l=0,u=0,a=0,d=0,sp=0;
+int n=s1.length();
+//System.out.println(n);
+for(int i=0;i<n;i++){
+	char ch=s1.charAt(i);
+	if(Character.isLetter(ch)){
+		a++;
+	
+	if(Character.isLowerCase(ch)){
+		l++;
+	}
+	else {
+		u++;
+	}
+
+	}
+	else if(Character.isDigit(ch)){
+		d++;
+	}
+	else{
+		sp++;
+	}
+}
+
+System.out.println("Alphabets: "+a);
+
+System.out.println("Lower case Alphabets: "+l);
+System.out.println("Upper case Alphabets: "+u);
+System.out.println("digits: "+d);
+
+System.out.println("Special symbols: "+sp);
+
+
+
+
+}
+}
+
+
+
+
+OUTPUT:
+
+D:\JAVA CRT>javac String_count.java
+
+D:\JAVA CRT>java String_count
+
+NithYasRi@@159
+Alphabets: 9
+Lower case Alphabets: 6
+Upper case Alphabets: 3
+digits: 3
+Special symbols: 2
