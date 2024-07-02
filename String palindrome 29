@@ -1,0 +1,57 @@
+Write a program to find whether the given string is a palindrome or not
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+If the given string is a Palindrome display “Palindrome”, else display “Not a Palindrome”.
+
+Sample Input 0
+
+madam
+Sample Output 0
+
+Palindrome
+Sample Input 1
+
+java
+Sample Output 1
+
+Not a Palindrome
+
+
+
+OUTPUT:
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        int n=str.length();
+        int j=0,i;
+        for(i=n-1;i>=0;i--){
+            if(str.charAt(i)==str.charAt(j)){
+                j++;
+            }
+            else{
+                break;
+            }
+        }
+        if(j==n)
+            System.out.print("Palindrome");
+        else
+            System.out.print("Not a Palindrome");
+    }
+}
