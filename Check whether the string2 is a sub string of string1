@@ -1,0 +1,38 @@
+//Read two strings and print second string is sub string of first string or not
+
+
+SOURCE CODE:
+
+import java.util.*;
+import java.lang.*;
+
+class String_subString{
+public static void main(String[] args){
+
+Scanner s=new Scanner(System.in);
+String str1=s.nextLine();
+String str2=s.nextLine();
+if(str1.contains(str2)){
+System.out.print("str2 is a sub string of str1");
+}
+else
+System.out.print("str2 is not a sub string of str1");
+
+}
+}
+
+
+OUTPUT:
+
+D:\JAVA CRT>javac String_subString.java
+
+D:\JAVA CRT>java String_subString
+nithya sri reddy
+reddy
+str2 is a sub string of str1
+
+
+D:\JAVA CRT>java String_subString
+nithya sri reddy
+kasula
+str2 is not a sub string of str1
