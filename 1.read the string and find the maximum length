@@ -1,0 +1,34 @@
+//.read the string and find the maximum length
+
+SOURCE CODE:
+
+import java.util.*;
+import java.lang.*;
+
+class String_Test5{
+public static void main(String[] args){
+
+Scanner s=new Scanner(System.in); 
+String s1=s.nextLine();
+String res[]=s1.split(" ");
+int max=res[0].length();
+for(int i=0;i<res.length-1;i++){
+	if(res[i].length()>max){
+		max=res[i].length();
+	}
+
+}
+System.out.print(max);
+
+}
+}
+
+
+OUTPUT:
+
+6
+D:\JAVA CRT>javac String_Test5.java
+
+D:\JAVA CRT>java String_Test5
+Nthya sri reddy D/O of narasimha reddy
+9
