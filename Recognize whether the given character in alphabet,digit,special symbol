@@ -1,0 +1,58 @@
+//Read a character and print character is alpha-numeric or special symbol.
+//If alpha-numeric then print alphabet or digit.
+//If alphabet then print upper case or Lower case letter.
+
+
+
+SOURCE CODE:
+
+import java.util.*;
+class Character_recognition{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+char ch=s.next().charAt(0);
+if(Character.isLetterOrDigit(ch))
+{
+	System.out.println("Alpha-Numeric");
+	if(Character.isLetter(ch)){
+		System.out.println("Alphabet"); 
+		if(Character.isUpperCase(ch)){
+			System.out.println("Upper case Alphabet");
+		}
+		else{
+			System.out.println("Lower case Alphabet");
+		}
+	}
+	else{
+		System.out.println("Numeric");
+	}
+	
+}
+else{
+	System.out.println("Special Symbol");
+
+}
+}
+}
+
+
+OUTPUT1:
+
+D:\JAVA CRT>javac Character_recognition.java
+
+D:\JAVA CRT>java Character_recognition
+h
+Alpha-Numeric
+Alphabet
+Lower case Alphabet
+
+
+
+OUTPUT2:
+
+D:\JAVA CRT>javac Character_recognition.java
+
+D:\JAVA CRT>java Character_recognition
+3
+Alpha-Numeric
+Numeric
