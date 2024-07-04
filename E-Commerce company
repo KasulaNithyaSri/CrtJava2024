@@ -1,0 +1,87 @@
+An e-commerce company has a product list in its database. Each product key in the list is space separated, but due to a bug all the product keys were combined, converting the list into a string. The manager wishes to reproduce the product list by adding whitespaces after every X character in the string formed due to the bug.
+
+Write an algorithm that will take t string formed due to the bug and put whitespaces after every X character in the string
+
+Input Format
+
+The first line of the input consists of string formed from the due to the bug. The last line consists of an integer charCount representing the number of characters after which whitespaces should be added in the string formed by the bug (X).
+
+Constraints
+
+string
+
+Output Format
+
+Print a space-separated string containing the product keys. The string should contain whitespaces after each charCount character.
+
+Note If charCount is more than the last remaining characters, those characters will be used as they are.
+
+Sample Input 0
+
+abcdefg
+2
+Sample Output 0
+
+ab cd ef g
+Sample Input 1
+
+language
+3
+Sample Output 1
+
+lan gua ge
+
+
+
+SOURCE CODE1:
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        int n=s.nextInt();
+        int j=1;
+        String res="";
+        for(int i=0;i<str.length();i++){
+            res=res+str.charAt(i);
+            if(i==n*j-1){
+                res=res+" ";
+                j++;
+            }
+        }
+        System.out.print(res);
+    }
+}
+
+
+
+SOURCE CODE2:
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        int n=s.nextInt();
+        int j=1;
+        for(int i=0;i<str.length();i++){
+            System.out.print(str.charAt(i));
+            if(i==n*j-1){
+                System.out.print(" ");
+                j++;
+            }
+        }
+    }
+}
