@@ -1,0 +1,56 @@
+Source code:
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Array_to_ArrayList
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		Integer n=s.nextInt();
+		Integer a[]= new Integer[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		int pos=s.nextInt();
+		int value=s.nextInt();
+
+		ArrayList<Integer> a1=new ArrayList<Integer>(Arrays.asList(a));
+
+		//adding element using the position
+
+		a1.add(pos,value);
+
+		for(Integer r:a1)
+		{
+			System.out.print(r+" ");
+		}
+		System.out.println();
+
+		//deleting element using the position(del_pos)
+		int del_pos=s.nextInt();
+
+		a1.remove(del_pos);
+		for(Integer r:a1)
+		{
+			System.out.print(r+" ");
+		}
+
+	}
+}
+
+
+OUTPUT:
+
+D:\JAVA CRT>javac Array_to_ArrayList.java
+
+D:\JAVA CRT>java  Array_to_ArrayList
+5
+2 3 4 5 6
+4 9
+2 3 4 5 9 6
+3
+2 3 4 9 6
